@@ -1,7 +1,5 @@
 # Aayush Parekh — Personal Portfolio
 
-![Portfolio Demo](https://aayushparekhportfolio.netlify.app/)
-
 > **Live Demo:** [https://aayushparekhportfolio.netlify.app/](https://aayushparekhportfolio.netlify.app/)
 
 ---
