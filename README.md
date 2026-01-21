@@ -37,9 +37,6 @@ To deploy manually:
    **OR**
 3. Connect your GitHub repository to Netlify
 
-## You can view the live preview here:  
-👉 https://aayushparekhportfolio.netlify.app/
-
 ---
 
 ## 📞 Contact
@@ -57,3 +54,4 @@ Feel free to fork this repository, star it ⭐, and use it as a reference.
 ---
 
 ### © 2026 Aayush Parekh  
+
