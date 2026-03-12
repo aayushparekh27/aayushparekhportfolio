@@ -2,12 +2,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize loading screen
     initLoadingScreen();
-    
-    // Initialize theme toggle
-    initThemeToggle();
-    
+
     // Initialize navigation
     initNavigation();
+
+    // Navbar scroll class
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        navbar?.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
     
     // Initialize typing animation
     initTypingAnimation();
