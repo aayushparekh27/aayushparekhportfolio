@@ -4,8 +4,7 @@ This is my **personal portfolio website** built using **HTML, CSS, and JavaScrip
 It showcases my skills, projects, and contact information in a clean and responsive design.
 
 🔗 **Live Website:**  
-👉 https://aayushparekhportfolio.netlify.app/
-
+👉 
 ---
 
 ## 📌 Features
@@ -29,13 +28,13 @@ It showcases my skills, projects, and contact information in a clean and respons
 
 ## 🚀 Deployment
 
-This website is deployed using **Netlify**.
+This website is deployed using **vercel**.
 
 To deploy manually:
-1. Create a Netlify account
+1. Create a vercel account
 2. Drag & drop the project folder  
    **OR**
-3. Connect your GitHub repository to Netlify
+3. Connect your GitHub repository to vercel
 
 ---
 
@@ -54,4 +53,5 @@ Feel free to fork this repository, star it ⭐, and use it as a reference.
 ---
 
 ### © 2026 Aayush Parekh  
+
 
