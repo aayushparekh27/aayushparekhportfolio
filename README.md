@@ -2,11 +2,7 @@
 
 This is my **personal portfolio website** built using **HTML, CSS, and JavaScript**.  
 It showcases my skills, projects, and contact information in a clean and responsive design.
-
-🔗 **Live Website:**  
-👉 https://aayushparekhportfolio.vercel.app/
----
-
+-
 ## 📌 Features
 
 - Responsive design (works on mobile, tablet & desktop)
@@ -23,18 +19,6 @@ It showcases my skills, projects, and contact information in a clean and respons
 - **HTML5** – Structure of the website  
 - **CSS3** – Styling and layout  
 - **JavaScript** – Interactivity and functionality
-
----
-
-## 🚀 Deployment
-
-This website is deployed using **vercel**.
-
-To deploy manually:
-1. Create a vercel account
-2. Drag & drop the project folder  
-   **OR**
-3. Connect your GitHub repository to vercel
 
 ---
 
