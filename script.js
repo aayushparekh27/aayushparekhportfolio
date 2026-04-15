@@ -54,7 +54,7 @@ function initLoadingScreen() {
         setTimeout(() => {
             loadingScreen.style.display = 'none';
         }, 500);
-    }, 1500); // Reduced from 2000ms for better UX
+    }, 1000); // Faster reveal so the page does not feel stuck
 }
 
 // Theme Toggle
@@ -313,61 +313,55 @@ function initProjectsSection() {
         {
             id: 1,
             category: 'web',
-            title: 'Library Management System',
-            description: 'Full-stack web application for library management with PHP and MySQL.',
-            tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
-            image: 'Project logo/library 1.jpg',
-            github: 'https://github.com/aayushparekh27/Library-Management-System',
+            title: 'Secure File Sharing',
+            description: 'Frontend implementation of a secure file sharing interface.',
+            image: 'https://res.cloudinary.com/dbulfrlrz/images/f_auto,q_auto/v1707565243/wp-pme/secure-file-sharing/secure-file-sharing.?_i=AA',
+            github: 'https://github.com/aayushparekh27/Secure-File-Sharing',
             live: '#'
         },
         {
             id: 2,
-            category: 'c',
-            title: 'Student Management in C',
-            description: 'Console-based student record management system using C programming.',
-            tech: ['C'],
-            image: 'Project logo/student 1.jpg',
-            github: 'https://github.com/aayushparekh27/Student-Managment-System-Using-C-',
+            category: 'web',
+            title: 'Hotwheels Car',
+            description: 'Interactive JavaScript-driven web concept themed around Hotwheels.',
+            image: 'https://miro.medium.com/0*zhrWkf7h1WG6hpgY.jpg',
+            github: 'https://github.com/aayushparekh27/Hotwheels_Car',
             live: '#'
         },
         {
             id: 3,
             category: 'web',
-            title: 'Student Management Web',
-            description: 'Web-based student management system with database integration.',
-            tech: ['HTML', 'CSS', 'PHP', 'MySQL'],
-            image: 'Project logo/student 2.jpg',
-            github: 'https://github.com/aayushparekh27/Student-Management-System-With-Data-Base-and-UI-',
+            title: 'Viral Penguin',
+            description: 'Creative CSS project with playful visual styling and layout.',
+            image: 'https://imagesvs.oneindia.com/img/2026/01/penguin-viral-video-1769232930.jpg',
+            github: 'https://github.com/aayushparekh27/Viral_Penguin',
             live: '#'
         },
         {
             id: 4,
             category: 'web',
-            title: 'To-Do List App',
-            description: 'Interactive to-do list application with local storage support.',
-            tech: ['HTML', 'CSS', 'JavaScript'],
-            image: 'Project logo/to do.jpg',
-            github: 'https://github.com/aayushparekh27/To-Do-List',
+            title: 'Nike Home Page',
+            description: 'Nike-themed landing page with polished layout and styling.',
+            image: 'https://static.vecteezy.com/system/resources/previews/010/994/412/non_2x/nike-logo-black-with-name-clothes-design-icon-abstract-football-illustration-with-white-background-free-vector.jpg',
+            github: 'https://github.com/aayushparekh27/Nike-Home-Page-',
             live: '#'
         },
         {
             id: 5,
-            category: 'c',
-            title: 'Marksheet in C',
-            description: 'Student marksheet generator with file handling capabilities.',
-            tech: ['C'],
-            image: 'Project logo/marksheet.jpg',
-            github: 'https://github.com/aayushparekh27/Student-Marksheet-Generator-Using-C-',
+            category: 'web',
+            title: 'Apple Music Clone',
+            description: 'Music player style web app with upload and playback support.',
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSagu76tcapt1NRYZRDkBHzv8IyTqJgfnQREQ&s',
+            github: 'https://github.com/aayushparekh27/Apple-Music-Clone',
             live: '#'
         },
         {
             id: 6,
-            category: 'python',
-            title: 'Phone Validator',
-            description: 'Python tool for validating and formatting phone numbers.',
-            tech: ['Python'],
-            image: 'Project logo/phone.jpg',
-            github: 'https://github.com/aayushparekh27/phone-number-validator',
+            category: 'web',
+            title: 'Password Vault',
+            description: 'Frontend password vault project focused on secure storage flows.',
+            image: 'https://media.canva.com/v2/image-resize/format:PNG/height:240/quality:100/uri:ifs%3A%2F%2FM%2F078c0756-a2c0-4f8e-8f19-2a7ad31bcc6b/watermark:F/width:240?csig=AAAAAAAAAAAAAAAAAAAAADwQqzdMt-rOUseIYOVX4-VIa3OCxGVvk5n3vnjsVlli&exp=1776257794&osig=AAAAAAAAAAAAAAAAAAAAAHDVbDvPUOK4xbrO11NoFFOHd94xWZL6aLxTMfQZzdFz&signer=media-rpc&x-canva-quality=screen',
+            github: 'https://github.com/aayushparekh27/password-vault',
             live: '#'
         }
     ];
@@ -404,7 +398,7 @@ function initProjectsSection() {
                     <img src="${proj.image}" alt="${proj.title}" loading="lazy" 
                          onerror="this.onerror=null; this.src='https://via.placeholder.com/400x200/1e293b/94a3b8?text=Project+Image'">
                     <div class="project-overlay">
-                        <a href="${proj.github}" target="_blank" class="project-link">
+                        <a href="${proj.github}" target="_blank" rel="noopener noreferrer" class="project-link">
                             <i class="fab fa-github"></i> View Code
                         </a>
                     </div>
@@ -412,14 +406,11 @@ function initProjectsSection() {
                 <div class="project-content">
                     <h3 class="project-title">${proj.title}</h3>
                     <p class="project-description">${proj.description}</p>
-                    <div class="project-tech">
-                        ${proj.tech.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
-                    </div>
                     <div class="project-links">
-                        <a href="${proj.github}" target="_blank" class="project-link" aria-label="View code on GitHub">
+                        <a href="${proj.github}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View code on GitHub">
                             <i class="fab fa-github"></i> Code
                         </a>
-                        ${proj.live !== '#' ? `<a href="${proj.live}" target="_blank" class="project-link" aria-label="View live demo">
+                        ${proj.live !== '#' ? `<a href="${proj.live}" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View live demo">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>` : ''}
                     </div>
@@ -464,6 +455,8 @@ function initProjectsSection() {
 function initSkillsSection() {
     const skillsGrid = document.querySelector('.skills-grid');
     const toolsGrid = document.querySelector('.tools-grid');
+    const skillsToggle = document.querySelector('.skills-toggle[data-target="skills"]');
+    const toolsToggle = document.querySelector('.skills-toggle[data-target="tools"]');
     
     if (!skillsGrid || !toolsGrid) return;
     
@@ -471,13 +464,19 @@ function initSkillsSection() {
         { name: 'Java', level: 85, icon: 'fab fa-java', color: '#007396' },
         { name: 'C', level: 80, icon: 'fas fa-c', color: '#A8B9CC' },
         { name: 'C++', level: 75, icon: 'fas fa-c', color: '#00599C' },
+        { name: 'C#', level: 72, icon: 'fas fa-hashtag', color: '#9B4F96' },
         { name: 'Python', level: 70, icon: 'fab fa-python', color: '#3776AB' },
         { name: 'JavaScript', level: 75, icon: 'fab fa-js-square', color: '#F7DF1E' },
+        { name: 'TypeScript', level: 68, icon: 'fas fa-code', color: '#3178C6' },
         { name: 'HTML', level: 90, icon: 'fab fa-html5', color: '#E34F26' },
         { name: 'CSS', level: 85, icon: 'fab fa-css3-alt', color: '#1572B6' },
+        { name: 'XML', level: 68, icon: 'fas fa-code', color: '#F48024' },
+        { name: 'JSON', level: 66, icon: 'fas fa-file-code', color: '#F7DF1E' },
         { name: 'SQL', level: 70, icon: 'fas fa-database', color: '#4479A1' },
         { name: 'PHP', level: 65, icon: 'fab fa-php', color: '#777BB4' },
         { name: 'Shell', level: 65, icon: 'fas fa-terminal', color: '#4EAA25' },
+        { name: 'Bash', level: 64, icon: 'fas fa-terminal', color: '#4EAA25' },
+        { name: 'PowerShell', level: 63, icon: 'fas fa-terminal', color: '#5391FE' },
         { name: 'React JS', level: 70, icon: 'fab fa-react', color: '#61DAFB' },
         { name: 'Node JS', level: 68, icon: 'fab fa-node-js', color: '#339933' },
         { name: 'EJS', level: 72, icon: 'fas fa-code', color: '#A91E50' }
@@ -488,7 +487,11 @@ function initSkillsSection() {
         { name: 'GitHub', icon: 'fab fa-github', color: '#181717' },
         { name: 'VS Code', icon: 'fas fa-code', color: '#007ACC' },
         { name: 'MySQL', icon: 'fas fa-database', color: '#4479A1' },
+        { name: 'Odoo', icon: 'fas fa-cubes', color: '#875A7B' },
+        { name: 'Supabase', icon: 'fas fa-database', color: '#3ECF8E' },
         { name: 'Firebase', icon: 'fas fa-fire', color: '#FFCA28' },
+        { name: 'Vercel', icon: 'fas fa-rocket', color: '#000000' },
+        { name: 'Netlify', icon: 'fas fa-cloud-upload-alt', color: '#00C7B7' },
         { name: 'Google Cloud', icon: 'fab fa-google', color: '#4285F4' },
         { name: 'Docker', icon: 'fab fa-docker', color: '#2496ED' },
         { name: 'Linux', icon: 'fab fa-linux', color: '#FCC624' },
@@ -499,12 +502,52 @@ function initSkillsSection() {
         { name: 'Nmap', icon: 'fas fa-search', color: '#4B8BBE' },
         { name: 'John the Ripper', icon: 'fas fa-key', color: '#FF4500' }
     ];
+
+    const visibleSkillCount = 8;
+    const visibleToolCount = 8;
+
+    function renderItems(container, items, itemClass, renderItem, visibleCount) {
+        container.innerHTML = '';
+
+        items.forEach((item, index) => {
+            const element = document.createElement('div');
+            element.className = `${itemClass} animate-on-scroll`;
+            if (index >= visibleCount) {
+                element.classList.add('is-collapsed');
+            }
+            element.innerHTML = renderItem(item);
+            container.appendChild(element);
+        });
+    }
+
+    function updateToggle(button, isExpanded) {
+        if (!button) return;
+        button.textContent = isExpanded ? 'Show Less' : 'View More';
+        button.setAttribute('aria-expanded', String(isExpanded));
+    }
+
+    function toggleList(container, button, visibleCount) {
+        const hiddenItems = Array.from(container.querySelectorAll('.is-collapsed'));
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        const nextExpanded = !isExpanded;
+
+        hiddenItems.forEach((item, index) => {
+            item.classList.toggle('is-collapsed', !nextExpanded && index >= visibleCount);
+        });
+
+        if (nextExpanded) {
+            hiddenItems.forEach(item => item.classList.remove('is-collapsed'));
+        } else {
+            Array.from(container.children).forEach((item, index) => {
+                item.classList.toggle('is-collapsed', index >= visibleCount);
+            });
+        }
+
+        updateToggle(button, nextExpanded);
+    }
     
     // Render skills
-    skills.forEach(skill => {
-        const skillItem = document.createElement('div');
-        skillItem.className = 'skill-item animate-on-scroll';
-        skillItem.innerHTML = `
+    renderItems(skillsGrid, skills, 'skill-item', (skill) => `
             <div class="skill-icon" style="color: ${skill.color}">
                 <i class="${skill.icon}"></i>
             </div>
@@ -512,21 +555,25 @@ function initSkillsSection() {
             <div class="skill-level">
                 <div class="level-bar" data-level="${skill.level}" style="background: linear-gradient(90deg, ${skill.color}, ${skill.color}80)"></div>
             </div>
-        `;
-        skillsGrid.appendChild(skillItem);
-    });
+        `, visibleSkillCount);
     
     // Render tools
-    tools.forEach(tool => {
-        const toolItem = document.createElement('div');
-        toolItem.className = 'tool-item animate-on-scroll';
-        toolItem.innerHTML = `
+    renderItems(toolsGrid, tools, 'tool-item', (tool) => `
             <div class="tool-icon" style="color: ${tool.color}">
                 <i class="${tool.icon}"></i>
             </div>
             <span class="tool-name">${tool.name}</span>
-        `;
-        toolsGrid.appendChild(toolItem);
+        `, visibleToolCount);
+
+    updateToggle(skillsToggle, false);
+    updateToggle(toolsToggle, false);
+
+    skillsToggle?.addEventListener('click', () => {
+        toggleList(skillsGrid, skillsToggle, visibleSkillCount);
+    });
+
+    toolsToggle?.addEventListener('click', () => {
+        toggleList(toolsGrid, toolsToggle, visibleToolCount);
     });
 }
 

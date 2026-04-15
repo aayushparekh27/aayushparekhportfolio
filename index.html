@@ -4,7 +4,6 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
-<html lang="en">
 <head>
   <meta charset="UTF-8">
 
@@ -123,10 +122,10 @@
           </a>
         </div>
         <div class="hero-social">
-          <a href="https://github.com/aayushparekh27" target="_blank" aria-label="GitHub" data-tooltip="GitHub">
+          <a href="https://github.com/aayushparekh27" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-tooltip="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/aayushparekh26" target="_blank" aria-label="LinkedIn" data-tooltip="LinkedIn">
+          <a href="https://www.linkedin.com/in/aayushparekh26" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="LinkedIn">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="mailto:aayushparekh266@gmail.com" aria-label="Email" data-tooltip="Email">
@@ -238,18 +237,11 @@
         <p class="section-subtitle">Things I've designed and built</p>
       </div>
 
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web Dev</button>
-        <button class="filter-btn" data-filter="c">C / C++</button>
-        <button class="filter-btn" data-filter="python">Python</button>
-      </div>
-
       <div class="projects-grid"><!-- loaded by JS --></div>
 
       <div class="github-cta animate-on-scroll">
         <p>Want to explore more of my work?</p>
-        <a href="https://github.com/aayushparekh27" target="_blank" class="btn btn-outline">
+        <a href="https://github.com/aayushparekh27" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
           <i class="fab fa-github"></i> View All on GitHub
         </a>
       </div>
@@ -268,11 +260,13 @@
       <div class="skills-container">
         <div class="skills-category animate-on-scroll">
           <h3>Programming Languages</h3>
-          <div class="skills-grid"><!-- loaded by JS --></div>
+          <div class="skills-grid" id="skillsGrid"><!-- loaded by JS --></div>
+          <button class="skills-toggle" type="button" data-target="skills" aria-controls="skillsGrid" aria-expanded="false">View More</button>
         </div>
         <div class="tools-showcase animate-on-scroll">
           <h3>Tools &amp; Platforms</h3>
-          <div class="tools-grid"><!-- loaded by JS --></div>
+          <div class="tools-grid" id="toolsGrid"><!-- loaded by JS --></div>
+          <button class="skills-toggle" type="button" data-target="tools" aria-controls="toolsGrid" aria-expanded="false">View More</button>
         </div>
       </div>
     </div>
@@ -293,15 +287,15 @@
             <div class="info-icon"><i class="fas fa-envelope"></i></div>
             <div class="info-content"><h4>Email</h4><p>aayushparekh26@gmail.com</p></div>
           </a>
-          <a href="https://www.linkedin.com/in/aayushparekh26" target="_blank" class="info-card">
+          <a href="https://www.linkedin.com/in/aayushparekh26" target="_blank" rel="noopener noreferrer" class="info-card">
             <div class="info-icon"><i class="fab fa-linkedin"></i></div>
             <div class="info-content"><h4>LinkedIn</h4><p>linkedin.com/in/aayushparekh26</p></div>
           </a>
-          <a href="https://github.com/aayushparekh27" target="_blank" class="info-card">
+          <a href="https://github.com/aayushparekh27" target="_blank" rel="noopener noreferrer" class="info-card">
             <div class="info-icon"><i class="fab fa-github"></i></div>
             <div class="info-content"><h4>GitHub</h4><p>github.com/aayushparekh27</p></div>
           </a>
-          <a href="https://www.google.com/maps/search/?api=1&query=Anand,+Gujarat,+India" target="_blank" class="info-card">
+          <a href="https://www.google.com/maps/search/?api=1&query=Anand,+Gujarat,+India" target="_blank" rel="noopener noreferrer" class="info-card">
             <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div class="info-content"><h4>Location</h4><p>Anand, Gujarat, India</p></div>
           </a>
@@ -327,7 +321,7 @@
               <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
               <label for="message">Your Message</label>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:.92rem;">
+            <button type="submit" class="btn btn-primary contact-submit-btn">
               <span class="btn-text"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Send Message</span>
               <div class="btn-loader"><div class="spinner"></div></div>
             </button>
@@ -361,9 +355,9 @@
         <div class="footer-social">
           <h4>Connect</h4>
           <div class="social-links">
-            <a href="https://github.com/aayushparekh27"          target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/aayushparekh26" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/aayush.2667/"     target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/aayushparekh27"          target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aayushparekh26" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/aayush.2667/"     target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
