@@ -199,7 +199,7 @@ function initTypingAnimation() {
     ];
     
     let roleIndex = 0;
-    let charIndex = 0;
+        let charIndex = 0;
     let isDeleting = false;
     let isWaiting = false;
     let typingTimeout;
@@ -360,7 +360,7 @@ function initProjectsSection() {
             category: 'web',
             title: 'Password Vault',
             description: 'Frontend password vault project focused on secure storage flows.',
-            image: 'https://media.canva.com/v2/image-resize/format:PNG/height:240/quality:100/uri:ifs%3A%2F%2FM%2F078c0756-a2c0-4f8e-8f19-2a7ad31bcc6b/watermark:F/width:240?csig=AAAAAAAAAAAAAAAAAAAAADwQqzdMt-rOUseIYOVX4-VIa3OCxGVvk5n3vnjsVlli&exp=1776257794&osig=AAAAAAAAAAAAAAAAAAAAAHDVbDvPUOK4xbrO11NoFFOHd94xWZL6aLxTMfQZzdFz&signer=media-rpc&x-canva-quality=screen',
+            image: 'https://images.unsplash.com/photo-1633265486064-086b219458ec?auto=format&fit=crop&w=1200&q=80',
             github: 'https://github.com/aayushparekh27/password-vault',
             live: '#'
         }
